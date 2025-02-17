@@ -1,0 +1,13 @@
+# Ignore Terraform plan and state files
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Ignore SSH private keys and sensitive files
+*.pem
+
+# Ignore .terraform directory
+.terraform/
+
+# Ignore .terraform.lock.hcl (for Terraform providers lock file)
+.terraform.lock.hcl 
