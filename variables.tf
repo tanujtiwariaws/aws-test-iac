@@ -10,6 +10,18 @@ variable "env" {
   default     = "dev"
 }
 
+variable "appid" {
+  type        = string
+  default     = "APP-12794"
+  description = "App ID"
+}
+
+variable "lob" {
+  type        = string
+  default     = "test"
+  description = "Line of Business"
+}
+
 variable "webserver_vpc_id" {
   description = "Mapping of environment to VPC IDs"
   type = map(string)

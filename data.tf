@@ -8,3 +8,7 @@ data "aws_vpc" "compute" {
 data "aws_subnet" "compute" {
   id = var.webserver_subnet_id[var.env]  # Dynamically retrieve the subnet ID from input variable
 }
+
+data "aws_region" "current" {}
+
+data "aws_caller_identity" "current" {}
